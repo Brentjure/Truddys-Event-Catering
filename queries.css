@@ -1,0 +1,82 @@
+/* ***************************** */
+/* max-width: 84em (1344px) */
+/* **************************** */
+@media (max-width: 84em) {
+  .navbar {
+    width: 100%; /*Allow the navbar to scale with the container */
+    /* max-width: 100%; */
+    padding: 4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content {
+    max-width: 80%; /* Reduce max-width for better fit */
+    /* text-align: center; Center the text */
+  }
+
+  .hero-content h1 {
+    font-size: 4.4rem; /* Adjust font-size for better fit */
+  }
+
+  .hero-content p {
+    font-size: 1.8rem; /* Slight reduction for smaller screens */
+  }
+}
+/* ********************************* */
+/* max-width: 75em (1200px) */
+/* ********************************* */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .h-content {
+    max-width: 60%;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+
+    /* color: #612a0e; */
+  }
+  .services-container {
+    gap: 2.4rem;
+  }
+}
+
+/* *************************** */
+/* max-width: 59em (944px) */
+/* ********************* */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ************************** */
+/* max-width: 44em (704px) */
+/* ************************** */
+@media (max-width: 44em) {
+  .hero-content h1 {
+    font-size: 3.6rem;
+  }
+  .hero-content p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .ctabutton:link,
+  .ctabutton:visited {
+    font-size: 1.8rem;
+    padding: 1.4rem 2.8rem;
+  }
+}
+
+/* *************************** */
+/* max-width: 34em (544px) */
+/* ************************** */
+@media (max-width: 34em) {
+}

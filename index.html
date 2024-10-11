@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Events & Catering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,12 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    /> -->
 
     <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="queries.css" />
   </head>
   <body>
     <header class="hero-section">
@@ -47,37 +52,40 @@
     </header>
     <!-- About us -->
     <section class="aboutSection">
-      <div class="container">
-        <span class="subheading">About us</span>
-        <h2 class="heading-secondary">We make your events unforgetable!</h2>
-      </div>
-      <div class="container grid">
-        <div class="about-textbox">
-          <p class="about-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos animi
-            sunt repudiandae minus, quis laudantium laborum natus atque nesciunt
-            fuga eligendi vero. Accusamus modi magnam soluta doloremque tempore
-            illo cumque?
-          </p>
-          <p class="about-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptates, sunt? Dicta cum, numquam fuga, ad libero, eligendi
-            doloribus pariatur animi soluta unde maiores nostrum quas quae
-            minima est quos saepe.
-          </p>
+      <div class="sec">
+        <div class="">
+          <span class="subheading">About us</span>
+          <h2 class="heading-secondary">We make your events unforgetable!</h2>
         </div>
-        <div class="about-imgbox">
-          <img
-            src="https://media.istockphoto.com/id/1400672365/photo/big-wedding-dinner-table-in-backyard-view-from-above.webp?a=1&b=1&s=612x612&w=0&k=20&c=_LikToMdsNgMj7xBTF_vW4GUYGtGgViR3WUZDw4S5PE="
-            class="about-img"
-            alt="ïmage of an event"
-          />
+        <div class="grid">
+          <div class="about-textbox">
+            <p class="about-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+              animi sunt repudiandae minus, quis laudantium laborum natus atque
+              nesciunt fuga eligendi vero. Accusamus modi magnam soluta
+              doloremque tempore illo cumque?
+            </p>
+            <p class="about-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptates, sunt? Dicta cum, numquam fuga, ad libero, eligendi
+              doloribus pariatur animi soluta unde maiores nostrum quas quae
+              minima est quos saepe.
+            </p>
+          </div>
+          <div class="about-imgbox">
+            <img
+              src="https://media.istockphoto.com/id/1400672365/photo/big-wedding-dinner-table-in-backyard-view-from-above.webp?a=1&b=1&s=612x612&w=0&k=20&c=_LikToMdsNgMj7xBTF_vW4GUYGtGgViR3WUZDw4S5PE="
+              class="about-img"
+              alt="ïmage of an event"
+            />
+          </div>
         </div>
       </div>
     </section>
+
     <!-- Our services -->
     <section class="services" id="services">
-      <div class="">
+      <div class="sec">
         <div class="container">
           <span class="subheading">Who we are:</span>
           <h2 class="heading-secondary">We make your events unforgetable!</h2>
@@ -135,7 +143,7 @@
     </section>
     <!-- portfolio -->
     <section class="portfolio" id="portfolio">
-      <div class="">
+      <div class="sec">
         <div class="container">
           <span class="subheading">View our work</span>
           <h2 class="heading-secondary">We make your events unforgetable!</h2>
@@ -202,10 +210,10 @@
     </section>
 
     <!-- Testimonials -->
-    <section>
+    <section class="section-testimonials">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
-        <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+        <h2 class="heading-secondary">Here's what our clients say</h2>
 
         <div class="testimonials">
           <figure class="testimonial">
@@ -253,7 +261,7 @@
       <div class="gallery">
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-1.jpg"
+            src="https://media.istockphoto.com/id/1311487470/photo/decorated-banquet-with-salads.jpg?s=612x612&w=0&k=20&c=Z6yOsYRIXn463T8YXXPZ9pfKaPrBO89JwDxMpPd9vZc="
             alt="Photo of beautifully
         arranged food"
           />
@@ -261,82 +269,192 @@
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-2.jpg"
+            src="https://media.istockphoto.com/id/1221163563/photo/elegant-wedding-white-table-set-plates-forks-and-glasses.jpg?s=612x612&w=0&k=20&c=08gtK7EMSvP3-xjerRIlKBMFw1gq3LDfW9mbkk4y-Ws="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-3.jpg"
+            src="https://media.istockphoto.com/id/466876675/photo/catering.jpg?s=612x612&w=0&k=20&c=6gMKkyYunR6HnlOYhB1jdhvPUMyuLWbWHASDxR7iZRo="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-4.jpg"
+            src="https://media.istockphoto.com/id/2172584790/photo/smiling-waiter-serving-refreshing-tropical-cocktails-in-modern-cafe.jpg?s=612x612&w=0&k=20&c=EBVuCul9jxnclZR0jvJVCd4ZDLaGnNUGXHvND517dHs="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-5.jpg"
+            src="https://media.istockphoto.com/id/665776314/photo/wedding-dinner-by-the-sea-wedding-banquet-at-the-sea-donja-las.jpg?s=612x612&w=0&k=20&c=Et1oiTNujeR-b6nkVkfAWoroLy9XUry7amh03Q3nZ-M="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-6.jpg"
+            src="https://media.istockphoto.com/id/926070114/photo/buffet.jpg?s=612x612&w=0&k=20&c=U5h_oQn4Lq_GGs2mFs12caBcR4o-ehzl2LwjCZPGTkw="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-7.jpg"
+            src="https://media.istockphoto.com/id/931530452/photo/buffet-line-of-lunch-and-dinner-buffet-self-service-food.jpg?s=612x612&w=0&k=20&c=d4O61gnKiIKAFubieDhKDhYy9NSW84A71tqQl5cgNsI="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-8.jpg"
+            src="https://media.istockphoto.com/id/186096078/photo/close-up-of-table-nine-at-wedding-reception.jpg?s=612x612&w=0&k=20&c=vmlR12z5Ru9gxTg1fz6Y99caLh7kHDJ_2L1RIocVs-0="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-9.jpg"
+            src="https://media.istockphoto.com/id/953268282/photo/table-with-bio-food.jpg?s=612x612&w=0&k=20&c=pwI0c2W7jYh8hPklziqhuQIlOdZLjY8UDdRAlLHc180="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-10.jpg"
+            src="https://media.istockphoto.com/id/157637114/photo/waiter-serving-at-a-wedding-party.jpg?s=612x612&w=0&k=20&c=RdyQwHilSRQ-VZSq3tHUp6KJJfh2G-kDjNXreitwkQ4="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-11.jpg"
+            src="https://media.istockphoto.com/id/1695804505/photo/beautiful-outdoor-wedding-decoration-in-city-candles-and-dried-flowers-and-accessories-with.jpg?s=612x612&w=0&k=20&c=aAemIa8DPV2rBl9JQP-rb118_SMaIJxou1v-RNfprxg="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
         <figure class="gallery-item">
           <img
-            src="img/gallery/gallery-12.jpg"
+            src="https://media.istockphoto.com/id/1133752255/photo/square-academic-cap-for-graduation.jpg?s=612x612&w=0&k=20&c=m5R-lnB6xJEUP7Q_zkcsQaRw-_-bmkaM3Za496s2GKI="
             alt="Photo of beautifully
         arranged food"
           />
         </figure>
       </div>
     </section>
+
+    <!-- cta section -->
+    <section class="section-cta" id="cta">
+      <div class="container sec">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">
+              Let's talk about your next special event!
+            </h2>
+            <div class="contacts-cta">
+              <div class="contact-item">
+                <ion-icon class="icon" name="location-outline"></ion-icon>
+                <span>Migosi</span>
+              </div>
+              <div class="contact-item">
+                <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
+                <span>+254711439527</span>
+              </div>
+
+              <div class="contact-item">
+                <ion-icon class="icon" name="call-outline"></ion-icon>
+                <span>+254711439527</span>
+              </div>
+              <div class="contact-item">
+                <ion-icon class="icon" name="mail-outline"></ion-icon>
+                <span>truddyarthouse@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="sec">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="Truddy logo" src="img/omnifood-logo.png" />
+            </a>
+
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+
+            <p class="copyright">
+              Copyright &copy; <span class="year">2024</span> by Truddy's Art &
+              Kitchen House. All rights reserved.
+            </p>
+          </div>
+
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">Kisumu, Migosi</p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">+254711439527</a
+                ><br />
+                <a class="footer-link" href="mailto:hello@omnifood.com"
+                  >truddyarthouse.com</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Links</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Home</a></li>
+              <li><a class="footer-link" href="#">About</a></li>
+              <li><a class="footer-link" href="#">Testimonials</a></li>
+              <li><a class="footer-link" href="#">Our Services</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About Omnifood</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Cooking partners</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

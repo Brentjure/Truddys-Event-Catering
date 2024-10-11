@@ -37,10 +37,10 @@ html {
   /* max-width: 140rem; */
 }
 
-/* .hero {
+.hero {
   max-width: 120rem;
-  background-color: green;
-} */
+  margin: 0 auto;
+}
 .navbar {
   font-size: 2rem;
   font-weight: 700;
@@ -125,7 +125,17 @@ section {
   padding: 8rem 0;
 }
 
+.sec {
+  margin: 0 auto;
+  width: 120rem;
+}
 /* About section */
+.aboutSection {
+  padding: 9.6rem 0 3.2rem 0;
+}
+.sec {
+  padding: 0 3.2rem;
+}
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -251,10 +261,11 @@ section {
 /* Testimonial */
 
 .section-testimonials {
-  background-color: green;
+  padding-top: 0;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
+  background-color: #fef0e9;
 }
 
 .testimonials-container {
@@ -305,4 +316,161 @@ section {
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/* cta Section */
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
+
+  /* background-image: linear-gradient(to right bottom, #eb984e, #e67e22); */
+  overflow: hidden;
+  background-color: #ffe9d5;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  /* color: #45260a; */
+  color: #333;
+}
+
+.cta .heading-secondary {
+  /* color: #444; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.137),
+      rgba(230, 125, 34, 0.11)
+    ),
+    url("https://media.istockphoto.com/id/1695804505/photo/beautiful-outdoor-wedding-decoration-in-city-candles-and-dried-flowers-and-accessories-with.jpg?s=612x612&w=0&k=20&c=aAemIa8DPV2rBl9JQP-rb118_SMaIJxou1v-RNfprxg=");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.contacts-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  justify-content: space-around;
+  padding: 0 6.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-items: center;
+  color: #331d09;
+}
+.contact-item {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2rem;
+  align-items: center;
+}
+.contact-item span {
+  text-align: center;
+}
+.icon {
+  width: 5rem;
+  height: 5rem;
+  align-self: center;
+
+  color: #331d09;
+}
+
+/* footer */
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
