@@ -25,16 +25,20 @@
   <body>
     <header class="hero-section">
       <div class="hero">
-        <nav class="navbar container">
+        <nav class="navbar container nav-open">
           <div class="logo">
             <a href="#">Your Brand</a>
           </div>
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="navlink" href="#">Home</a></li>
+            <li><a class="navlink" href="#">About</a></li>
+            <li><a class="navlink" href="#">Services</a></li>
+            <li><a class="navlink" href="#">Contact</a></li>
           </ul>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
         </nav>
 
         <div class="hero-content container">
@@ -45,7 +49,7 @@
               your vision to life with personalized event planning and gourmet
               catering.
             </p>
-            <a href="#" class="ctabutton">Learn More &darr;</a>
+            <a class="ctabutton">Learn More &darr;</a>
           </div>
         </div>
       </div>
@@ -91,51 +95,47 @@
           <h2 class="heading-secondary">We make your events unforgetable!</h2>
         </div>
         <div class="services-container">
-          <div class="col-md-4">
-            <div class="service-card">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1529636695044-9e93499f4de3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlZGRpbmdzfGVufDB8fDB8fHww"
-                  class="card-img-top"
-                  alt="Wedding Planning"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Wedding Planning</h5>
-                <p class="card-text">
-                  Let us plan your special day with perfection and style.
-                </p>
-              </div>
+          <div class="service-card">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1529636695044-9e93499f4de3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlZGRpbmdzfGVufDB8fDB8fHww"
+                class="card-img-top"
+                alt="Wedding Planning"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wedding Planning</h5>
+              <p class="card-text">
+                Let us plan your special day with perfection and style.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card service-card">
-              <img
-                src="https://media.istockphoto.com/id/650655146/photo/catering-food-wedding-event-table.jpg?s=612x612&w=0&k=20&c=ATGYgW8bM_559jJ5aUNO4HlJqpkOWUmNNMMflx5kajo="
-                class="card-img-top"
-                alt="Corporate Events"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Corporate Events</h5>
-                <p class="card-text">
-                  Professional event management for corporate functions.
-                </p>
-              </div>
+
+          <div class="card service-card">
+            <img
+              src="https://media.istockphoto.com/id/650655146/photo/catering-food-wedding-event-table.jpg?s=612x612&w=0&k=20&c=ATGYgW8bM_559jJ5aUNO4HlJqpkOWUmNNMMflx5kajo="
+              class="card-img-top"
+              alt="Corporate Events"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Corporate Events</h5>
+              <p class="card-text">
+                Professional event management for corporate functions.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card service-card">
-              <img
-                src="https://media.istockphoto.com/id/1091407516/photo/wedding-or-other-event-catering-food-concept.jpg?s=612x612&w=0&k=20&c=sxhgKRWkMUgsVcGHlBMyz6LBXcXFBlH4ibEt76MAfUg="
-                class="card-img-top"
-                alt="Catering Services"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Catering Services</h5>
-                <p class="card-text">
-                  Delicious menus tailored to your event's needs.
-                </p>
-              </div>
+
+          <div class="card service-card">
+            <img
+              src="https://media.istockphoto.com/id/1091407516/photo/wedding-or-other-event-catering-food-concept.jpg?s=612x612&w=0&k=20&c=sxhgKRWkMUgsVcGHlBMyz6LBXcXFBlH4ibEt76MAfUg="
+              class="card-img-top"
+              alt="Catering Services"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Catering Services</h5>
+              <p class="card-text">
+                Delicious menus tailored to your event's needs.
+              </p>
             </div>
           </div>
         </div>

@@ -40,11 +40,26 @@
   }
   .heading-secondary {
     font-size: 3.6rem;
-
-    /* color: #612a0e; */
   }
   .services-container {
-    gap: 2.4rem;
+    /* gap: 2.4rem; */
+    padding: 0 6.4rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  /* .service-card {
+    max-width: 100%;
+    height: auto;
+  } */
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .card-body {
+    padding: 0 2.4rem 2.4rem 2.4rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
   }
 }
 
@@ -54,6 +69,65 @@
 @media (max-width: 59em) {
   html {
     font-size: 50%;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  testimonials-container {
+    padding: 9.6rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 3fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .contacts-cta {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-links {
+    background-color: #ffffffe3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.8rem;
+    z-index: 10;
+    transition: all 0.5s ease-in;
+
+    transform: translateX(100%);
+
+    /* hide nav */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    color: #333;
+  }
+  .navlink:link,
+  .navlink:visited {
+    font-size: 3rem !important;
+    color: #555 !important;
   }
 }
 
