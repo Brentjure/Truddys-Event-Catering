@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -58,7 +65,7 @@ html {
 .hero-section {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.61)),
-    url("https://media.istockphoto.com/id/1311487470/photo/decorated-banquet-with-salads.jpg?s=612x612&w=0&k=20&c=Z6yOsYRIXn463T8YXXPZ9pfKaPrBO89JwDxMpPd9vZc="); /* Replace with your hero image link */
+    url("images/img-9.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -158,19 +165,23 @@ section {
 
 .sec {
   margin: 0 auto;
-  width: 120rem;
+  max-width: 120rem;
 }
+
+/* *********************** */
 /* About section */
+/* ********************* */
 .aboutSection {
-  padding: 9.6rem 0 3.2rem 0;
+  padding: 9.6rem 3.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
-.sec {
-  padding: 0 3.2rem;
-}
+
 .grid {
   display: grid;
   gap: 9.6rem;
   grid-template-columns: repeat(2, 1fr);
+  /* align-items: center; */
 }
 
 .heading-primary,
@@ -207,21 +218,26 @@ section {
 .about-description {
   font-size: 1.8rem;
   line-height: 1.8;
+  /* word-wrap: break-word; */
 }
 
 .about-img {
-  width: 80%;
+  width: 100%;
   border-radius: 1rem;
 }
 
+/* ************* */
 /* Services */
+/* *********** */
 .services {
-  padding: 0 0;
+  margin-bottom: 6.4rem;
+  padding: 0 3.2rem;
 }
+
 .services-container {
   margin: 0 auto;
   max-width: 120rem;
-  padding: 0 3.2rem;
+  /* padding: 0 3.2rem; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
@@ -267,6 +283,11 @@ section {
   line-height: 1.4;
 }
 
+.portfolio {
+  padding: 0 3.2rem;
+  margin-bottom: 6.4rem;
+}
+
 .portfoliobtn:link,
 .portfoliobtn:visited {
   font-size: 1.6rem;
@@ -292,8 +313,9 @@ section {
   align-items: center; */
 }
 
+/* ************** */
 /* Testimonial */
-
+/* *************** */
 .section-testimonials {
   padding-top: 0;
   display: grid;
@@ -359,6 +381,12 @@ section {
 
   /* top / horizontal / left */
   padding: 4.8rem 0 12.8rem;
+}
+
+.cta-container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 4.8rem;
 }
 
 .cta {
@@ -441,6 +469,11 @@ section {
   border-top: 1px solid #eee;
 }
 
+.footer-container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+}
 .grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
 }

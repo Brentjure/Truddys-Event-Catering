@@ -43,7 +43,7 @@
   }
   .services-container {
     /* gap: 2.4rem; */
-    padding: 0 6.4rem;
+    /* padding: 0 6.4rem; */
     /* grid-template-columns: repeat(2, 1fr); */
   }
 
@@ -135,7 +135,10 @@
 /* max-width: 44em (704px) */
 /* ************************** */
 @media (max-width: 44em) {
-  .hero-content h1 {
+  .hero-section {
+    height: 80vh;
+  }
+  /* .hero-content h1 {
     font-size: 3.6rem;
   }
   .hero-content p {
@@ -146,6 +149,19 @@
   .ctabutton:visited {
     font-size: 1.8rem;
     padding: 1.4rem 2.8rem;
+  } */
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    padding: 0;
+  }
+  .services {
+    margin-bottom: 6.4rem;
   }
 }
 
