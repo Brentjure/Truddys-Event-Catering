@@ -52,11 +52,14 @@ html {
 .nav-open .icon-mobile-nav[name="menu-outline"] {
   display: none; /* Hide the menu icon when nav is open */
 }
-.container {
+
+.container-nav {
   margin: 0 auto;
   width: 120rem;
-  /* max-width: 120rem; */
-  /* padding: 0 2rem; */
+}
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
 }
 
 /* header {
@@ -76,7 +79,6 @@ html {
 .hero {
   max-width: 120rem;
   margin: 0 auto;
-  /* position: relative; */
 }
 .navbar {
   font-size: 2rem;
@@ -242,6 +244,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
 }
+
 .service-card {
   display: flex;
   flex-direction: column;
@@ -426,7 +429,7 @@ section {
       rgba(235, 151, 78, 0.137),
       rgba(230, 125, 34, 0.11)
     ),
-    url("https://media.istockphoto.com/id/1695804505/photo/beautiful-outdoor-wedding-decoration-in-city-candles-and-dried-flowers-and-accessories-with.jpg?s=612x612&w=0&k=20&c=aAemIa8DPV2rBl9JQP-rb118_SMaIJxou1v-RNfprxg=");
+    url("images/img-1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -469,12 +472,19 @@ section {
   border-top: 1px solid #eee;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
 .footer-container {
   margin: 0 auto;
   max-width: 120rem;
   padding: 0 3.2rem;
 }
 .grid--footer {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
 }
 
