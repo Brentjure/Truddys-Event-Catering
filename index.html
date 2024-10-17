@@ -11,6 +11,11 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
     <title>Events & Catering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,9 +37,9 @@
           </div>
           <ul class="nav-links">
             <li><a class="navlink" href="#">Home</a></li>
-            <li><a class="navlink" href="#">About</a></li>
-            <li><a class="navlink" href="#">Services</a></li>
-            <li><a class="navlink" href="#">Contact</a></li>
+            <li><a class="navlink" href="#about">About</a></li>
+            <li><a class="navlink" href="#services">Services</a></li>
+            <li><a class="navlink" href="#cta">Contact</a></li>
           </ul>
           <button class="btn-mobile-nav">
             <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
@@ -50,14 +55,14 @@
               your vision to life with personalized event planning and gourmet
               catering.
             </p>
-            <a href="" class="ctabutton">Learn More &darr;</a>
+            <a href="#about" class="ctabutton">Learn More &darr;</a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- About us -->
-    <section class="aboutSection">
+    <section class="aboutSection" id="about">
       <div class="sec">
         <div class="about-header">
           <span class="subheading">About us</span>
@@ -238,7 +243,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
         <h2 class="heading-secondary">Here's what our clients say</h2>
@@ -443,7 +448,7 @@
             </ul>
 
             <p class="copyright">
-              Copyright &copy; <span class="year">2024</span> by Truddy's Art &
+              Copyright &copy; <span class="year"></span> by Truddy's Art &
               Kitchen House. All rights reserved.
             </p>
           </div>
@@ -466,9 +471,11 @@
             <p class="footer-heading">Links</p>
             <ul class="footer-nav">
               <li><a class="footer-link" href="#">Home</a></li>
-              <li><a class="footer-link" href="#">About</a></li>
-              <li><a class="footer-link" href="#">Testimonials</a></li>
-              <li><a class="footer-link" href="#">Our Services</a></li>
+              <li><a class="footer-link" href="#about">About</a></li>
+              <li>
+                <a class="footer-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li><a class="footer-link" href="#services">Our Services</a></li>
             </ul>
           </nav>
 
@@ -476,7 +483,7 @@
             <p class="footer-heading">Company</p>
             <ul class="footer-nav">
               <li>
-                <a class="footer-link" href="#">About Truddy Art House</a>
+                <a class="footer-link" href="#about">About Truddy Art House</a>
               </li>
               <li><a class="footer-link" href="#">For Business</a></li>
               <li><a class="footer-link" href="#">Cooking partners</a></li>
