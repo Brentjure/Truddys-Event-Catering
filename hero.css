@@ -13,6 +13,7 @@
 html,
 body {
   overflow-x: hidden;
+  font-size: 62.5%;
 }
 
 html {
@@ -64,6 +65,41 @@ html {
   max-width: 120rem;
 }
 
+/* ******************** */
+/* Sticky Navigation */
+/* ******************* */
+.sticky .nav-hero {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #ffffffe7;
+  /* background-color: orange; */
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
+  color: #333 !important;
+  /* z-index: 100; */
+}
+
+.sticky .hero-section {
+  color: #333 !important;
+  /* margin-top: 8rem; */
+}
+
+.sticky .navbar .logo a {
+  color: #333;
+}
+.sticky .navbar .btn-mobile-nav[name="menu-outline"] {
+  color: #333;
+}
+.sticky .navbar .nav-links a {
+  color: #333 !important;
+}
+/* .sticky .hero-section {
+  color: #333 !important;
+} */
 /* header {
   position: relative;
 } */
@@ -78,10 +114,6 @@ html {
   /* max-width: 140rem; */
 }
 
-.hero {
-  max-width: 120rem;
-  margin: 0 auto;
-}
 .navbar {
   font-size: 2rem;
   font-weight: 700;
