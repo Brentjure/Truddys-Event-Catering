@@ -526,7 +526,11 @@ section {
   display: flex;
   flex-direction: column;
 }
-
+.logo-f {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
 .footer-logo {
   display: block;
   margin-bottom: 3.2rem;

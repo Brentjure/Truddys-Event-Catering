@@ -91,7 +91,9 @@
     display: block;
   }
   .nav-links {
-    background-color: #ffffffee;
+    background-color: #ffffffe1;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     position: absolute;
     top: 0;
     right: 0;
@@ -198,6 +200,14 @@
 
   .h-content {
     max-width: 85%;
+  }
+
+  .card-body {
+    padding: 0 2.4rem 2.4rem 2.4rem;
+  }
+  .card-text {
+    font-size: 1.2rem;
+    line-height: 1;
   }
 
   .testimonials {
