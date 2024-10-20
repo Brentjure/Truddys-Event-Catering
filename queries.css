@@ -185,11 +185,11 @@
     height: 60vh;
   }
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
   .hero-content p {
-    font-size: 1.6rem;
-    line-height: 1.2;
+    font-size: 1.8rem;
+    line-height: 1.6;
   }
 
   .hero-content {
@@ -207,17 +207,21 @@
   }
   .card-text {
     font-size: 1.2rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .testimonials {
     grid-template-columns: 1fr;
   }
+
+  .cta-container {
+    padding: 0 3.2rem;
+  }
   .cta {
     grid-template-columns: 1fr;
   }
   .cta-text-box {
-    padding: 3.2rem;
+    padding: 1.8rem;
   }
   .cta-img-box {
     height: 32rem;
