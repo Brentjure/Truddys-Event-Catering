@@ -175,6 +175,19 @@
   .nav-col {
     grid-row: 1;
   }
+
+  .modal-content img {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+
+  .close {
+    font-size: 30px;
+  }
+
+  .modal-nav button {
+    font-size: 30px;
+  }
 }
 
 /* *************************** */
@@ -240,5 +253,22 @@
 
   .gallery {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-img {
+    max-width: 100%;
+  }
+
+  .modal-content img {
+    max-width: 90%;
+    max-height: 60vh;
+  }
+
+  .close {
+    font-size: 25px;
+  }
+
+  .modal-nav button {
+    font-size: 25px;
   }
 }

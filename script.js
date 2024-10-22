@@ -89,8 +89,60 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+// Modal carasel
+// Select elements
+const galleryImages = document.querySelectorAll(".gallery-img");
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeIcon = document.querySelector(".close");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentImageIndex = 0;
+
+// Function to open the modal with the clicked image
+function openModal(index) {
+  currentImageIndex = index;
+  modalImage.src = galleryImages[currentImageIndex].src;
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModalFunc() {
+  modal.style.display = "none";
+}
+
+// Function to navigate to the next image in the gallery
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+  modalImage.src = galleryImages[currentImageIndex].src;
+}
+
+// Function to navigate to the previous image in the gallery
+function prevImage() {
+  currentImageIndex =
+    (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+  modalImage.src = galleryImages[currentImageIndex].src;
+}
+
+// Add event listeners to gallery images
+galleryImages.forEach((img, index) => {
+  img.addEventListener("click", () => openModal(index));
+});
+
+// Event listeners for closing modal and navigating through images
+closeIcon.addEventListener("click", closeModalFunc);
+nextBtn.addEventListener("click", nextImage);
+prevBtn.addEventListener("click", prevImage);
+
+// Close modal if user clicks outside of the image
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModalFunc();
+  }
+});
