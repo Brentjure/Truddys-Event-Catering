@@ -375,7 +375,7 @@ section {
   height: 10rem;
 }
 .social {
-  padding: 3.2rem 3.2rem;
+  padding: 0 3.2rem;
   /* background-color: #fce1d3; */
 }
 .heading-social-events {
@@ -439,7 +439,7 @@ section {
 }
 
 .testimonials-container {
-  padding: 9.6rem;
+  padding: 8rem 9.6rem;
   margin: 0 auto;
 }
 
