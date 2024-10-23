@@ -237,7 +237,15 @@
     font-size: 1.2rem;
     line-height: 1.2;
   }
-
+  .client-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4.8rem;
+    justify-content: space-around;
+  }
+  .client-logo-img {
+    height: 7rem;
+  }
   .testimonials {
     grid-template-columns: 1fr;
   }
@@ -264,9 +272,6 @@
   .portfoliobtn:link,
   .portfoliobtn:visited {
     padding: 1.2rem 2.4rem;
-  }
-  .client-logo-img {
-    height: 5rem;
   }
 
   .gallery {
