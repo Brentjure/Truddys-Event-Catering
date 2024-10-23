@@ -129,6 +129,7 @@
     display: block;
     color: #333;
   }
+
   .navlink:link,
   .navlink:visited {
     font-size: 3rem !important;

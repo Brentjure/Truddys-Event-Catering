@@ -97,6 +97,10 @@ html {
 .sticky .navbar .nav-links a {
   color: #333 !important;
 }
+
+.sticky .icon-mobile-nav {
+  color: #333;
+}
 /* .sticky .hero-section {
   color: #333 !important;
 } */
