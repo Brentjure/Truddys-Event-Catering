@@ -88,7 +88,7 @@ html {
   /* margin-top: 8rem; */
 }
 .sticky .navbar {
-  /* align-items: center; */
+  align-items: center;
 }
 
 .sticky .navbar .logo a {
@@ -131,7 +131,8 @@ html {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  padding-top: 4rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
 
   margin: 0 auto;
   width: 120rem;
