@@ -80,7 +80,7 @@ html {
   /* background-color: orange; */
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
   color: #333 !important;
-  /* z-index: 100; */
+  z-index: 100;
 }
 
 .sticky .hero-section {
@@ -88,8 +88,9 @@ html {
   /* margin-top: 8rem; */
 }
 .sticky .navbar {
-  align-items: center;
+  /* align-items: center; */
 }
+
 .sticky .navbar .logo a {
   color: #333;
 }
@@ -397,6 +398,9 @@ section {
   text-align: center;
   margin-bottom: 2.4rem;
   color: #333;
+}
+.list-icon {
+  z-index: 1;
 }
 .social-events {
   /* text-align: center;
